@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ChildCare</title>
+    <style>
+        body {
+            font-family: "Courier New", Courier, monospace; /* Pixel-style font */
+            background-color: #f4f4f4; /* Slight grey background */
+            color: #000000; /* Black text */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #000000; /* Black background */
+            color: #ffffff; /* White text */
+            text-align: center;
+            padding: 20px;
+            font-size: 28px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 4px solid #8B0000; /* Dark red border */
+        }
+
+        main {
+            margin: 50px auto;
+            padding: 30px;
+            max-width: 700px; /* More spacious width */
+            background-color: #ffffff; /* White background */
+            border: 2px solid #000000; /* Black border */
+            border-radius: 12px; /* Slight rounded corners */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+        }
+
+        h1, h2 {
+            text-transform: uppercase;
+            border-bottom: 2px solid #8B0000; /* Dark red line */
+            padding-bottom: 10px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            font-size: 24px;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 16px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #333; /* Darker text for readability */
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px; /* Add space between form fields */
+        }
+
+        label {
+            font-weight: bold;
+            color: #8B0000; /* Dark red label */
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            padding: 12px;
+            border: 2px solid #000000; /* Black border */
+            border-radius: 6px;
+            font-size: 16px;
+            background-color: #f9f9f9; /* Light grey background for inputs */
+            color: #333; /* Dark text for better readability */
+        }
+
+        input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+            border-color: #8B0000; /* Dark red border on focus */
+            outline: none;
+            box-shadow: 0 0 5px rgba(139, 0, 0, 0.3); /* Soft shadow on focus */
+        }
+
+        button {
+            padding: 12px;
+            background-color: #8B0000; /* Dark red background */
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #a40000; /* Slightly lighter red on hover */
+        }
+
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #000000;
+            color: #ffffff;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+
+        .contact-links {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .contact-links a {
+            color: #8B0000; /* Dark red for links */
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            margin: 10px 20px;
+        }
+
+        .contact-links a:hover {
+            color: #a40000; /* Lighter red on hover */
+        }
+
+        /* Small screen adjustments */
+        @media (max-width: 600px) {
+            header {
+                font-size: 24px; /* Adjust font size for smaller screens */
+            }
+
+            main {
+                padding: 20px;
+                max-width: 90%; /* Use more screen space on mobile */
+            }
+
+            h1, h2 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <main>
+        <h2>We'd Love to Hear From You!</h2>
+
+        <p>If you have any questions, feedback, or need support, feel free to reach out to us using the form below.</p>
+
+        <form action="#" method="POST">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email address">
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-links">
+            <p>Need quick assistance? <strong>Email Us at</strong> <a href="mailto:support@childcare.com">support@childcare.com</a></p>
+            <p>Follow us on <a href="https://www.linkedin.com/company/childcare" target="_blank">LinkedIn</a> for updates and more!</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ChildCare - All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
+

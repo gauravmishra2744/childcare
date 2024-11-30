@@ -1,0 +1,178 @@
+/* Color Palette */
+:root {
+    --accent-color: #e81f0d; /* Coral Pink */
+    --highlight-color: #ffd700; /* Gold */
+    --background-light: #fdf6e3; /* Soft Cream */
+    --background-dark: #2e3440; /* Charcoal */
+    --text-light: #555555; /* Soft Gray */
+    --text-dark: #ffffff; /* White */
+  }
+  
+  /* General Styling */
+  body {
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body.light-mode {
+    background-color: var(--background-light);
+    color: var(--text-light);
+  }
+  
+  body.dark-mode {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+  }
+  
+  /* Header Styling */
+  .header-bg {
+    background: linear-gradient(90deg, #ff9a9e, #fad0c4, #fbc2eb); /* Pastel Gradient */
+    color: white;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-brand i {
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .text-accent {
+    color: var(--accent-color);
+  }
+  
+  .text-highlight {
+    color: var(--highlight-color);
+  }
+  
+  .search-input {
+    border-radius: 30px;
+    border: 2px solid var(--accent-color);
+  }
+  
+  form .btn-accent {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+  }
+  
+  form .btn-accent:hover {
+    background-color: #e55d4f; /* Slightly darker coral */
+  }
+  
+  .btn-highlight {
+    background-color: var(--highlight-color);
+    color: #212529;
+    border: none;
+  }
+  /* Card container customization */
+.custom-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for the card */
+.custom-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Card image container */
+.card-img-container {
+  position: relative;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Image styling */
+.card-img-top {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Image zoom effect on hover */
+.card-img-container:hover .card-img-top {
+  transform: scale(1.1);
+}
+
+/* Overlay styling */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  transition: opacity 0.3s ease;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Overlay visibility on hover */
+.card-img-container:hover .overlay {
+  opacity: 1;
+}
+
+/* Button styling */
+.btn-accent {
+  background: linear-gradient(45deg, #f76c6c, #ffcc00);
+  color: white;
+  border: none;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-accent:hover {
+  background: linear-gradient(45deg, #ffcc00, #f76c6c);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Typography */
+.card-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25rem;
+}
+
+.card-text {
+  font-size: 0.9rem;
+}
+/* Styling the written-strip background */
+.written-strip {
+  background-color:   #f3e5f5; /* Light background color */
+  border-radius: 8px; /* Optional: adds rounded corners */
+}
+
+.written-strip a {
+  color: #333; /* Default text color */
+  transition: color 1s ease; /* Smooth color transition */
+}
+
+.written-strip a:hover {
+  color: #FF6347; /* Color change on hover */
+}
+
+/* Optional: Remove underlines from links */
+.no-underline {
+  text-decoration: none;
+}
+
+.written-strip .text-accent {
+  color: #FF6347; /* Accent color for specific links */
+}
+
+
+
+
+
+  
+   

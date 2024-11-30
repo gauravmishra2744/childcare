@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChildCare</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="navbar navbar-expand-lg shadow py-3 header-bg">
+    <div class="container-fluid">
+      <!-- Website Name -->
+      <a href="#" class="navbar-brand fw-bold fs-2 text-accent">
+        <i class="bi bi-balloon-heart-fill text-warning"></i> 
+        Child<span class="text-highlight">Care</span>
+      </a>
+
+      <!-- Search Box -->
+      <form class="d-flex mx-auto w-50">
+        <input 
+          type="text" 
+          class="form-control me-2 search-input" 
+          placeholder="Search for Schemes" 
+          aria-label="Search Box">
+        <button class="btn btn-accent rounded-pill px-4" type="submit">
+          <i class="bi bi-search"></i> Search
+        </button>
+      </form>
+
+      <!-- Login & Dark Mode -->
+      <div class="d-flex align-items-center">
+        <button class="btn btn-highlight rounded-pill me-3">Login</button>
+        <button id="darkModeToggle" class="btn btn-outline-dark rounded-pill px-3">Dark Mode</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Written Strip Below Header -->
+   
+  <div class="written-strip text-center py-3">
+    <div class="container">
+      <div class="d-flex justify-content-center">
+        <a href="#education" class="fw-bold fs-6 text-accent mx-3 no-underline">Education & Skill Development</a>
+        <a href="#health" class="fw-bold fs-6 mx-3 no-underline">Health & Nutrition</a>
+        <a href="#protection" class="fw-bold fs-6 text-accent mx-3 no-underline">Protection & Legal Act</a>
+        <a href="#socialWelfare" class="fw-bold fs-6 mx-3 no-underline">Social Welfare & Financial Assistance</a>
+        <a href="#girlsFocus" class="fw-bold fs-6 text-accent mx-3 no-underline">Girls Child & Special Focus Initiatives</a>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Image Scroller Below Written Strip -->
+   
+  <div class="image-scroller py-3">
+    <div class="container">
+      <div id="carouselExampleControls" class="carousel slide custom-carousel mx-auto" data-bs-ride="carousel">
+        <div class="carousel-inner">
+  
+          <!-- First Slide -->
+          <div class="carousel-item active">
+            <div class="text-center mb-2">
+              <a href=" https://quiz2.mygov.in/" class="btn btn-primary">Click me</a>
+            </div>
+            <img src="schemes7.png" class="d-block w-100 custom-image" alt="New Health Scheme">
+          </div>
+  
+          <!-- Second Slide -->
+          <div class="carousel-item">
+            <div class="text-center mb-2">
+              <a href=" https://vlesociety.com/csc-digital-beti-yojana/" class="btn btn-primary">Click me</a>
+            </div>
+            <img src="scheme5.png" class="d-block w-100 custom-image" alt="Financial Assistance Scheme">
+          </div>
+  
+          <!-- Third Slide -->
+          <div class="carousel-item">
+            <div class="text-center mb-2">
+              <a href=" https://www.aicte-india.org/schemes/students-development-schemes/Pragati/General-Instructions" class="btn btn-primary">Click me</a>
+            </div>
+            <img src="schemes6.png" class="d-block w-100 custom-image" alt="Education Scheme for Children">
+          </div>
+  
+        </div>
+  
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  
+  <style>
+    .custom-carousel {
+      max-width: 900px; /* Adjust the width */
+      height: 350px;    /* Set desired height */
+      overflow-y: auto; /* Enable vertical scrolling */
+    }
+  
+    .custom-image {
+      height: 100%;        /* Stretch image to fit container */
+      object-fit: cover;   /* Ensure images cover the container proportionally */
+    }
+  
+    .carousel-inner {
+      height: 100%; /* Make carousel content fit the height */
+    }
+  </style>
+  
+
+  <!-- Subtopics Cards in a single row -->
+  <div class="container mt-5">
+    <div class="row d-flex justify-content-center">
+      <!-- Education Card -->
+      <div class="col-md-3 mb-4" id="education">
+        <div class="card custom-card shadow-lg rounded border-0">
+          <div class="card-img-container">
+            <img src="boy1.png" class="card-img-top rounded-top" alt="Education & Learning">
+            <div class="overlay">
+              <div class="overlay-text">Discover education opportunities and resources!</div>
+            </div>
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Education & Learning</h5>
+            <p class="card-text text-muted">Empowering children with quality education for a better future.</p>
+            <a href="index1.html" class="btn btn-accent btn-gradient">Explore</a>
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- Health Card -->
+      
+
+      <div class="col-md-3 mb-4" id="health">
+        <div class="card custom-card shadow-lg rounded border-0">
+          <div class="card-img-container">
+            <img src="boy2.jpg" class="card-img-top rounded-top" alt="Health & Nutrition">
+            <div class="overlay">
+              <div class="overlay-text">Learn more about health & nutrition initiatives!</div>
+            </div>
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Health & Nutrition</h5>
+            <p class="card-text text-muted">Discover programs and resources to improve overall well-being.</p>
+            <a href="index2.html" class="btn btn-accent btn-gradient">Explore</a>
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- Protection Card -->
+      <div class="col-md-3 mb-4" id="protection">
+        <div class="card custom-card shadow-lg rounded border-0">
+          <div class="card-img-container">
+            <img src="boy3.jpg" class="card-img-top rounded-top" alt="Protection & Legal Act">
+            <div class="overlay">
+              <div class="overlay-text">Learn more about protection and legal resources!</div>
+            </div>
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Protection & Legal Act</h5>
+            <p class="card-text text-muted">Understand the laws and protections available for citizens.</p>
+            <a href="index3.html" class="btn btn-accent btn-gradient">Explore</a>
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- Social Welfare Card -->
+      <div class="col-md-3 mb-4" id="socialWelfare">
+        <div class="card custom-card shadow-lg rounded border-0">
+          <div class="card-img-container">
+            <img src="boy4.png" class="card-img-top rounded-top" alt="Social Welfare & Financial Assistance">
+            <div class="overlay">
+              <div class="overlay-text">Explore social welfare programs and financial assistance schemes.</div>
+            </div>
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Social Welfare & Financial Assistance</h5>
+            <p class="card-text text-muted">Discover various welfare schemes and financial support for citizens.</p>
+            <a href="index4.html" class="btn btn-accent btn-gradient">Explore</a>
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- Girls Focus Card -->
+      <div class="col-md-3 mb-4" id="girlsFocus">
+        <div class="card custom-card shadow-lg rounded border-0">
+          <div class="card-img-container">
+            <img src="boy5.png" class="card-img-top rounded-top" alt="Girls Child & Special Focus Initiatives">
+            <div class="overlay">
+              <div class="overlay-text">Empowering girls and focusing on special initiatives for their growth.</div>
+            </div>
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Girls Child & Special Focus Initiatives</h5>
+            <p class="card-text text-muted">Learn more about schemes aimed at empowering young girls and children with special needs.</p>
+            <a href="index5.html" class="btn btn-accent btn-gradient">Explore</a>
+          </div>
+        </div>
+      </div>
+      
+  <!-- Footer -->
+  <footer class="footer py-4 mt-5 bg-dark text-white text-center">
+    <p> &nbsp&nbsp&nbsp<a href="privacy.html">Privacy Policy   </a> &nbsp&nbsp &nbsp  &nbsp &nbsp  <a href="contactus.html">Contact Team Cybernetic Alchemist</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="helpline.html">Helpline</a>  </p>
+    <p>&copy; 2024 ChildCare. All rights reserved to TEAM CYBERNATIC ALCHEMIST.</p>
+    <p>Designed for the welfare of children and families.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
